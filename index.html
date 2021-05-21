@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<title>Inicio</title>
+
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+		<!-- link de boostrap -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		
+		<!-- link de css -->
+		<link rel="stylesheet" href="css/estilo.css"/>
+	</head>
+
+	<body>
+
+		<!-- nav -->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light flex-fill">
+				<a class="navbar-brand" >
+					<img src="assets/logo.png"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav">
+						<a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="page/decococina.html">Decoracion de Living y Cocina</a>
+						<a class="nav-link" href="page/nuestroProyecto.html">Nuestros Proyectos</a>
+						<a class="nav-link " href="page/quienessomos.html" >Quienes Somos</a>
+						<a class="nav-link" href="page/contactos.html">Contactanos</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+
+		<div class="container-fluid">
+
+			<!--apertura de slider-->
+			<div class="row">
+				<div class="col-lg-10 offset-lg-1 col-xs-6">
+					<h1 class="text-center my-5">DECORACION DE INTERIORES</h1>
+					<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+							<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+						</ol>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<img src="assets/living-1.png" class="portada w-100" alt="living">
+							</div>
+							<div class="carousel-item">
+								<img src="assets/living-2.png" class="portada w-100" alt="cocina">
+							</div>
+							<div class="carousel-item">
+								<img src="assets/living-3.png" class="portada w-100" alt="diseño">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+
+			<footer>
+				<ul class="redes">
+					<li><a><img src="assets/facebook.png" alt="facebook"/></a></li>
+					<li><a><img src="assets/instagram.png" alt="Instagram"/></a></li>
+					<li><a><img src="assets/twiteer.png" alt="twitter"/></a></li>
+				</ul>
+			</footer>
+
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	</body>
+</html>

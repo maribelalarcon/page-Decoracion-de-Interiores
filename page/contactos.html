@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+		<title>Inicio</title>
+
+		<!-- link de animacion -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+		
+		<!-- link de boostrap -->
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+		
+		<!-- link de css -->
+		<link rel="stylesheet" href="../css/estilo.css"/>
+	</head>
+
+	<body>
+
+		<!-- nav -->
+		<header>
+			<nav class="navbar navbar-expand-lg navbar-light flex-fill">
+				<a class="navbar-brand" >
+					<img class="navbar__logo"src="../assets/logo.png"/>
+				</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+	
+				<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+					<div class="navbar-nav gradiente-menu">
+						<a class="nav-link" href="../index.html">Inicio <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="../page/decococina.html">Decoracion de Living y Cocina</a>
+						<a class="nav-link" href="../page/nuestroProyecto.html">Nuestros Proyectos</a>
+						<a class="nav-link " href="../page/quienessomos.html" >Quienes Somos</a>
+						<a class="nav-link" href="../page/contactos.html">Contactanos</a>
+					</div>
+				</div>
+			</nav>
+		</header>
+
+
+		<div class="container-fluid">
+
+			<!-- section de contactos -->
+			<section id="contacto" class="formulario">
+
+				<h2  class="text-center formulario__subtitulo">Contactanos</h2>
+
+				<div class="row formParrafo">
+					<div class="col-lg-6 col-xs-5">
+
+						<p class="texto1">
+							Nuestro objetivo es asesorarte de forma personalizada para hacer que cada proyecto sea único.
+							El deseo constante de crecer y de ponernos siempre al frente de nuevos desafíos es lo que nos hace seguir adelante con éxito,
+							siempre desarrollando nuevos proyectos.
+						</p>
+
+						<p class="texto2">Si queres recibir mas informacion, dejanos tu email.</p>
+
+						<!--formulario-->
+						<form>
+
+							<div class="form-row align-items-center">
+
+								<div class="col-auto">
+									<label class="sr-only"  for="inlineFormInput">Nombre</label>
+									<input type="text" class="form-control mb-2" id="inlineFormInput" placeholder="Nombre y Apellido">
+								</div>
+
+								<div class="col-auto">
+									<label class="sr-only" for="inlineFormInputGroup">Correo electronico</label>
+									<div class="input-group mb-2">
+										<div class="input-group-prepend">
+											<div class="input-group-text">@</div>
+										</div>
+										<input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Email">
+									</div>
+								</div>
+								
+								<div class="col-auto">
+									<button type="submit" class="btn btn-primary mb-2">Enviar</button>
+								</div>
+
+							</div>
+						</form>
+					</div>
+
+					<div class="col-lg-6 col-xs-5 animate__animated animate__fadeInDownBig">
+						<img class="formulario__imagen" src="../assets/contacto.jpeg">
+					</div>
+
+				</div>
+			</section>
+		</div>
+
+		<!-- pie de pagina -->
+		<footer class="footer">
+			<ul class="footer__redes">
+				<li><a><img class="footer__icon" src="../assets/facebook.png" alt="facebook"/></a></li>
+				<li><a><img class="footer__icon" src="../assets/instagram.png" alt="Instagram"/></a></li>
+				<li><a><img class="footer__icon" src="../assets/twiteer.png" alt="twitter"/></a></li>
+			</ul>
+		</footer>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+	</body>
+</html>
