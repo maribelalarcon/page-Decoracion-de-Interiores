@@ -1,24 +1,17 @@
-
-@font-face {
-	font-family: letra;
-	src: url("../assets/Fuked\ Free\ Trial.ttf");
-}
-
-@import url('https://fonts.googleapis.com/css2? family = Architects + Daughter & display = swap');
-@import url('https://fonts.googleapis.com/css?family=Architects+Daughter&family=Hind+Guntur:wght@600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import "fuentes";
+@import "colores";
 
 body {
 	margin: 0;
-	background-color: #e4d6cb;
-	background-image: linear-gradient(to bottom,#e4d6cb, white);
+	background-color: $amarillo;
+	background-image: linear-gradient(to bottom, $amarillo, $blanco);
 }
 
 header, footer {
-	background-color: #FFFFFF;
+	background-color: $blanco;
 	display: flex;
 	justify-content: space-between;
-	padding: 30px;
+	padding: 5px;
 	align-items: center;
 }
 
@@ -35,24 +28,31 @@ header, footer {
 }
 
 .navbar-brand img{
-	width: 60px;
+	width: 25px;
 }
 
 h1 {
-	text-shadow: 0 0 20px black;
-	font-family: 'Bebas Neue';
+	
+	font-family: $playfairRrgular;
 	justify-content: center;
 	box-sizing: border-box;
+	color: $negro;
 }
 
+/*section decoCocina*/
 h2 {
-	font-size: 50px;
+	font-size: 40px;
 	text-align: center;
+	font-family: $playfairRrgular;
+}
+
+h3{
+	font-family: $architects;
+	line-height: 1.5;
 }
 
 #livingCocina {
-	background-color: #cb997e;
-	
+
 	img {
 		width: 100%;
 		height: 500px;
@@ -66,12 +66,64 @@ h2 {
 
 p {
 	margin-left: 60px;
+	font-family: $openSans;
+}
+.deco__parrafo{
+	line-height: 2;
+	text-align: justify;
 }
 
+/*section NuestrosProyectos*/
+
+.nosotros{
+	background-color: $beige;
+}
+
+.jumbotron {
+	background-color: $naranja;
+	background-image: linear-gradient(to bottom, $naranja, $blanco);
+}
+
+.nuestroProyecto__texto{
+	font-family: $openSans;
+	color: $negro;
+	line-height: 2;
+	padding-top: 30px;
+}
+
+/*section quienesSomos*/
+
+.nosotros__subtitulo{
+	font-size: 40px;
+	text-align: center;
+
+}
+.nosotros__parrafo1 {
+	font-size: 20px;
+	line-height: 2.5;
+	font-family: $mcLaren;
+	padding-top: 5px;
+	padding-bottom: 15px;
+	margin: 8px;
+	text-align: justify;
+}
+
+.nosotros__parrafo2 {
+	font-size: 20px;
+	font-family: $mcLaren;
+	line-height: 2.5;
+	text-align: justify;
+	padding-top: 40px;
+	padding-bottom: 60px;
+	margin: 0;
+}
+
+/*section contactanos*/
+
 .texto1 {
-	font-family: "caveat";
-	font-size: 30px;
-	line-height: 1.5em;
+	font-family: $mcLaren;
+	font-size: 20px;
+	line-height: 2.5em;
 	margin: 5px;
 	text-align: justify;
 	padding-bottom: 20px;
@@ -79,15 +131,12 @@ p {
   
 .texto2 {
 	padding: 5px;
-	font-family: "danc";
+	font-family: $dance;
 	font-size: 30px;
 	line-height: 1.5em;
 	margin: 5px;
 }
-
-.formulario__subtitulo {
-	font-size: 50px;
-	font-family: "franco";
+.formulario__subtitulo {	
 	padding-top: 10px;
 	padding-bottom: 50px;
 }
@@ -97,29 +146,38 @@ p {
 	max-width: 100%;
 }
 
-/*section quienes somos*/
-.nosotros__parrafo1 {
-	font-size: 40px;
-	font-family: "caveat";
-	padding-top: 5px;
-	padding-bottom: 50px;
-	margin: 8px;
-	text-align: justify;
-}
+  /*footer*/
 
-.nosotros__parrafo2 {
-	font-size: 30px;
-	font-family: "danc";
-	text-align: justify;
-	padding-top: 40px;
-	padding-bottom: 60px;
-}
-  
 footer {
 	display: flex;
 	justify-content: center;
 	padding-top: 60px;
-	background-color:#fefae0;
+	background-color: $beige;
+	background: linear-gradient(to bottom, $beige, $blanco);
+
+}
+
+.footer__logo {
+	width: 60px;
+}
+
+.footer__email {
+	margin: 0;
+	padding-left: 30px;
+	background-image: url("../assets/email.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	display: inline-block;
+}
+
+footer { 
+
+	h4 {
+		margin-bottom: 30px;
+		font-weight: 800;
+		font-family: $buenared;
+		font-size: 18px;
+  	}
 
 	ul {
 		list-style: none;
@@ -136,6 +194,10 @@ footer {
 			margin: 0 20px;
 		}
 	}
+}
+
+.btn-deco {
+	background-color: $naranjaClaro;
 }
 
 

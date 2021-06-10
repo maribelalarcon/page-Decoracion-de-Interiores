@@ -1,0 +1,38 @@
+@font-face {
+	font-family: architects;
+	src: url("../assets/ArchitectsDaughter-Regular.ttf");
+}
+
+@font-face {
+	font-family: buenared;
+	src: url("../assets/Buenard-Bold.ttf");
+}
+
+@font-face {
+	font-family: dance;
+	src: url("../assets/DancingScript-VariableFont_wght.ttf");
+}
+
+
+@font-face {
+	font-family: openSans;
+	src: url("../assets/OpenSans-Light.ttf");
+}
+
+@font-face {
+	font-family: mcLaren;
+	src: url("../assets/McLaren-Regular.ttf");
+}
+
+@font-face {
+	font-family: playfairRrgular;
+	src: url("../assets/PlayfairDisplaySC-Regular.ttf");
+}
+
+
+$architects: "architects";
+$buenared: "buenared";
+$dance: "dance";
+$mcLaren: "mcLaren";
+$openSans:"openSans";
+$playfairRrgular:"playfairRrgular";
